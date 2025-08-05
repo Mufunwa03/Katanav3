@@ -1,6 +1,6 @@
 name: Katanas
 version: '${project.version}'
-main: com.yourname.katanas.KatanasPlugin
+main: Grim.Katanav3.KatanasPlugin
 api-version: '1.21'
 author: YourName
 description: '${project.description}'
