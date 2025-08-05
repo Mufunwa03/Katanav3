@@ -1,0 +1,100 @@
+# ----------------------------------------------------------------
+# Katanas Plugin Configuration V2
+# ----------------------------------------------------------------
+# To add a new katana, simply copy an existing one, change the ID
+# (e.g., "emerald_katana"), and edit its properties.
+# ----------------------------------------------------------------
+
+katanas:
+  wooden_katana:
+    enabled: true
+    display-name: "&fWooden Katana"
+    material: "WOODEN_SWORD"
+    custom-model-data: 1001
+    stats:
+      damage: 7.0
+      attack-speed: 3.2 # Default sword is 1.6. This is double speed.
+    recipe:
+      enabled: true
+      shape:
+        - "  S"
+        - " S "
+        - "W  "
+      ingredients:
+        S: "STICK"
+        W: "OAK_PLANKS"
+
+  iron_katana:
+    enabled: true
+    display-name: "&7Iron Katana"
+    material: "IRON_SWORD"
+    custom-model-data: 1002
+    stats:
+      damage: 9.0
+      attack-speed: 3.2
+    recipe:
+      enabled: true
+      shape:
+        - "  I"
+        - " I "
+        - "S  "
+      ingredients:
+        I: "IRON_INGOT"
+        S: "STICK"
+
+  gold_katana:
+    enabled: true
+    display-name: "&eGolden Katana"
+    material: "GOLDEN_SWORD"
+    custom-model-data: 1003
+    stats:
+      damage: 7.0
+      attack-speed: 4.0 # Even faster
+    recipe:
+      enabled: true
+      shape:
+        - "  G"
+        - " G "
+        - "S  "
+      ingredients:
+        G: "GOLD_INGOT"
+        S: "STICK"
+
+  diamond_katana:
+    enabled: true
+    display-name: "&bDiamond Katana"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1004
+    stats:
+      damage: 12.0
+      attack-speed: 3.2
+    recipe:
+      enabled: true
+      shape:
+        - "  D"
+        - " D "
+        - "S  "
+      ingredients:
+        D: "DIAMOND"
+        S: "STICK"
+
+  netherite_katana:
+    enabled: true
+    display-name: "&8&lNetherite Katana"
+    material: "NETHERITE_SWORD"
+    custom-model-data: 1005
+    stats:
+      damage: 14.0
+      attack-speed: 3.2
+    # Smithing recipes are more complex and would require a separate "type" field.
+    # For now, we'll use a placeholder crafting recipe.
+    recipe:
+      enabled: true
+      shape:
+        - "  N"
+        - " D "
+        - "S  "
+      ingredients:
+        N: "NETHERITE_INGOT"
+        D: "DIAMOND_KATANA" # This shows how to use custom items in recipes
+        S: "STICK"

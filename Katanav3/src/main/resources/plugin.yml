@@ -1,0 +1,22 @@
+name: Katanas
+version: '${project.version}'
+main: com.yourname.katanas.KatanasPlugin
+api-version: '1.21'
+author: YourName
+description: '${project.description}'
+commands:
+  givekatana:
+    description: "Gives a player a specified katana."
+    usage: "/<command> <katana_id> [player]"
+    permission: katanas.command.give
+  reloadkatanas:
+    description: "Reloads the katanas configuration."
+    usage: "/<command>"
+    permission: katanas.command.reload
+permissions:
+  katanas.command.give:
+    description: "Allows usage of the /givekatana command."
+    default: op
+  katanas.command.reload:
+    description: "Allows usage of the /reloadkatanas command."
+    default: op
